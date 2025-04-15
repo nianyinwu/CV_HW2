@@ -41,4 +41,4 @@ python3 inference.py -d <data path> -w <the path of model checkpoints> -s <save 
 ```
 
 ## Performance snapshot
-![image](https://github.com/nianyinwu/CV_HW1/blob/main/result/snapshot.png)
+![image](https://github.com/nianyinwu/CV_HW2/blob/main/result/snapshot.png)

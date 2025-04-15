@@ -59,21 +59,21 @@ def get_args():
         '--epochs',
         '-e',
         type=int,
-        default=50,
+        default=30,
         help='number of epochs'
     )
     parser.add_argument(
         '--batch_size',
         '-b',
         type=int,
-        default=16,
+        default=4,
         help='batch size'
     )
     parser.add_argument(
         '--learning_rate',
         '-lr',
         type=float,
-        default=1e-4,
+        default=5e-3,
         help='learning rate'
     )
 
