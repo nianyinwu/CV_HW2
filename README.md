@@ -30,11 +30,13 @@ conda activate hw2
 
 ## Training
 ```shell
+cd codes
 python3 train.py -e <epochs> -b <batch size> -lr <learning rate> -d <data path> -s <save path> 
 ```
 ## Testing ( Inference )
 The two predicted results (pred.csv and pred.json) will be saved in the argument of save path .
 ```shell
+cd codes
 python3 inference.py -d <data path> -w <the path of model checkpoints> -s <save path>
 ```
 
