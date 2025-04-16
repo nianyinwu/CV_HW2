@@ -118,7 +118,8 @@ def dataloader(args: Namespace, mode: str) -> DataLoader:
             shuffle = True
     elif mode == 'test':
         img_dir = os.path.join(args.data_path, mode)
-        dataset = TestDataset(img_dir, transform=data_transform)
+        transform = data_transform(mode)
+        dataset = TestDataset(img_dir, transform=transform)
         shuffle = False
 
     return DataLoader(
