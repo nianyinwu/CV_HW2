@@ -64,8 +64,4 @@ def get_model(num_classes):
 
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
 
-    model.roi_heads.fg_iou_thresh = 0.4
-    model.roi_heads.bg_iou_thresh = 0.3
-    model.roi_heads.nms_thresh    = 0.3
-
     return model
